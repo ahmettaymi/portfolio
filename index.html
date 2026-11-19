@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmet Taymi Genel — Portfolio</title>
+<meta name="description" content="Mobile-first 9:16 video creative: 1.28M views in 90 days, hook-rate analysis, motion design and AI-assisted production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Oswald:wght@500;700&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0E0E10;--card:#17171A;--line:#2A2A2F;--ink:#F4F4F2;--mute:#A3A3A8;--y:#FFD84A;--o:#FF6A1F;--good:#7BE08A}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 "Noto Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.eyebrow{font:500 13px/1 Oswald,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--mute)}
+h1{overflow-wrap:break-word;font:800 clamp(44px,8vw,92px)/.95 Poppins,sans-serif;letter-spacing:-.03em;margin:18px 0 22px}
+h1 span{background:linear-gradient(90deg,var(--y),var(--o));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:720px;font-size:19px;color:#DADAD6}
+.lead b{color:var(--ink);background:linear-gradient(transparent 58%,rgba(255,216,74,.38) 58%)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border:1px solid var(--line);border-radius:999px;text-decoration:none;font:600 14px/1 "Noto Sans";transition:.2s}
+.btn:hover{border-color:var(--y);color:var(--y)}
+.btn.primary{background:var(--y);color:#111;border-color:var(--y)}
+.btn.primary:hover{background:#ffe27a;color:#111}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:44px 0 0}
+.stat{min-width:0;background:var(--bg);padding:22px 22px 20px}
+.stat .n{font:800 clamp(28px,4vw,42px)/1 Poppins;letter-spacing:-.02em}
+.stat .l{color:var(--mute);font-size:14px;margin-top:8px}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+h2{font:700 clamp(30px,4.4vw,46px)/1.05 Oswald,sans-serif;text-transform:uppercase;letter-spacing:.01em}
+.sub{color:var(--mute);max-width:680px;margin:12px 0 34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.reel{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.vid{position:relative;aspect-ratio:9/16;background:#000;cursor:pointer}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;top:12px;left:12px;padding:5px 10px;border-radius:999px;font:600 11px/1 "Noto Sans";letter-spacing:.04em;text-transform:uppercase;background:rgba(0,0,0,.62);backdrop-filter:blur(6px)}
+.tag.brand{background:var(--y);color:#111}
+.snd{position:absolute;bottom:12px;right:12px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(0,0,0,.6);color:#fff;font-size:16px;cursor:pointer}
+.rank{position:absolute;top:10px;right:12px;font:800 26px/1 Poppins;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.meta{padding:16px 16px 18px}
+.meta h3{font:600 17px/1.25 "Noto Sans"}
+.views{font:800 26px/1 Poppins;margin:10px 0 12px;letter-spacing:-.02em}
+.views small{font:400 13px "Noto Sans";color:var(--mute);margin-left:6px;letter-spacing:0}
+.kv{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;font-size:13px}
+.kv div{color:var(--mute)} .kv b{display:block;color:var(--ink);font-size:15px}
+.ig{display:inline-block;margin-top:14px;font-size:13px;color:var(--y);text-decoration:none}
+.ig:hover{text-decoration:underline}
+/* hook analizi */
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{display:grid;grid-template-columns:150px 1fr 54px;align-items:center;gap:12px;font-size:14px}
+.bar .t{height:14px;background:#222226;border-radius:7px;overflow:hidden}
+.bar .t i{display:block;height:100%;border-radius:7px;background:#5A5A62}
+.bar.hi .t i{background:linear-gradient(90deg,var(--y),var(--o))}
+.bar.lo .t i{background:#E5544B}
+.bar .v{font:600 14px "Noto Sans";text-align:right}
+.note{color:var(--mute);font-size:13px;margin-top:14px}
+.insight{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:14px}
+.insight .k{font:500 12px Oswald;letter-spacing:.26em;text-transform:uppercase;color:var(--y)}
+.insight h4{font:600 18px/1.3 "Noto Sans";margin:8px 0 6px}
+.insight p{color:#C9C9C6;font-size:15px}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.cmp figure{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.cmp .frames{display:grid;grid-template-columns:repeat(3,1fr)}
+.cmp img{width:100%;display:block;aspect-ratio:9/16;object-fit:cover}
+.cmp figcaption{padding:12px 14px;font-size:14px}
+.cmp figcaption b{font:800 20px Poppins;margin-right:6px}
+.process{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.step{border-top:3px solid var(--y);padding-top:14px}
+.step .k{font:700 13px Oswald;letter-spacing:.2em;color:var(--mute)}
+.step h4{font:600 17px "Noto Sans";margin:6px 0}
+.step p{font-size:14px;color:#C9C9C6}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.tools span{border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:14px}
+.tools span.hl{border-color:var(--y);color:var(--y)}
+footer{padding:56px 0 80px}
+footer h2{margin-bottom:18px}
+@media (max-width:900px){.split{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.wrap{padding:0 16px}.process{grid-template-columns:1fr}.bar{grid-template-columns:110px 1fr 48px}.cmp{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr;gap:12px}.meta{padding:12px}.views{font-size:20px}.kv{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="eyebrow">Portfolio · Mobile-first video creative</div>
+  <h1>Ahmet Taymi Genel<br><span>Content Creator & Motion Designer</span></h1>
+  <p class="lead">I concept, shoot, edit and animate <b>hook-driven 9:16 videos</b> end to end — and I read the numbers after every post. Below: my top-performing Reels, what the data showed about hooks, and how I build each video. Also 6+ years of commercial production for brands like BMW, Prada, Louis Vuitton and Tiffany & Co.</p>
+  <div class="links">
+   <a class="btn primary" href="mailto:ahmettaymil@gmail.com">ahmettaymil@gmail.com</a>
+   <a class="btn" href="https://www.instagram.com/ahmet.taymi/" target="_blank" rel="noopener">Instagram @ahmet.taymi</a>
+   <a class="btn" href="https://linkedin.com/in/ahmettaymigenel" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="stats">
+   <div class="stat"><div class="n">1.28M</div><div class="l">Reels views in the last 90 days</div></div>
+   <div class="stat"><div class="n">400K</div><div class="l">views on a single Reel</div></div>
+   <div class="stat"><div class="n">11</div><div class="l">Reels above 100K views</div></div>
+   <div class="stat"><div class="n">2.7K→11.6K</div><div class="l">Instagram followers</div></div>
+  </div>
+ </div>
+</header>
+
+<section id="work">
+ <div class="wrap">
+  <h2>Top performing Reels</h2>
+  <p class="sub">Sorted by views. Metrics come straight from Instagram Insights. <b>Hook pass</b> = share of viewers who did <i>not</i> swipe away in the first seconds (100% − Instagram's skip rate). Tap a video for sound.</p>
+  <div class="grid" id="grid"></div>
+ </div>
+</section>
+
+<section id="data">
+ <div class="wrap">
+  <h2>What the data taught me</h2>
+  <p class="sub">I compare hook pass, watch time, saves and shares across posts to decide what to keep, cut and test next.</p>
+  <div class="split">
+   <div>
+    <div class="bars" id="bars"></div>
+    <p class="note">Hook pass by Reel (100% − skip rate). Instagram didn't show a skip rate for every Reel.</p>
+    <div class="cmp">
+     <figure><div class="frames"><img src="v/f_nano_1.jpg" alt=""><img src="v/f_nano_2.jpg" alt=""><img src="v/f_nano_3.jpg" alt=""></div>
+      <figcaption><b>70.7%</b>Nano Banana Pro — first 3 s</figcaption></figure>
+     <figure><div class="frames"><img src="v/f_pom_1.jpg" alt=""><img src="v/f_pom_2.jpg" alt=""><img src="v/f_pom_3.jpg" alt=""></div>
+      <figcaption><b>19.4%</b>Pomelli — first 3 s</figcaption></figure>
+    </div>
+   </div>
+   <div>
+    <div class="insight"><div class="k">Insight 01</div><h4>Show the payoff in the very first second</h4>
+     <p>My two best hooks — Nano Banana Pro (70.7%) and Kling 2.5 Turbo (61.0%) — open with a striking, concrete result (surreal AI images, a cinematic car shot) in the top half of a split screen, cutting roughly every second while I talk underneath.</p></div>
+    <div class="insight"><div class="k">Insight 02</div><h4>Abstract openings lose people</h4>
+     <p>Pomelli opened on dark, abstract launch footage. Only 19.4% passed the hook and average watch time was 4.8 s, the lowest in the set. Same format, same presenter; the only real difference was the first frame.</p></div>
+    <div class="insight"><div class="k">Insight 03</div><h4>Reach comes from saves, not only the hook</h4>
+     <p>Claude Skills had an average hook (50.2%) but became my biggest Reel: 400K views, 31.4K saves, 10.9K shares and 3.1K new followers. Practical, save-worthy content keeps getting pushed long after posting.</p></div>
+    <div class="insight"><div class="k">Next tests</div><h4>What I'd iterate on</h4>
+     <p>Result-first openings for every topic · on-screen promise vs. visual-only first frame · shorter intros on tutorial Reels · CTA placement after the first payoff instead of at the end.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="process">
+ <div class="wrap">
+  <h2>How I build a video</h2>
+  <p class="sub">One person from brief to delivery, with AI tools where they actually save time.</p>
+  <div class="process">
+   <div class="step"><div class="k">01</div><h4>Concept</h4><p>Find the one promise worth 3 seconds of attention.</p></div>
+   <div class="step"><div class="k">02</div><h4>Hook</h4><p>Lead with the visual payoff, not the setup.</p></div>
+   <div class="step"><div class="k">03</div><h4>Proof</h4><p>Split-screen product footage or screen capture under the voice.</p></div>
+   <div class="step"><div class="k">04</div><h4>Motion</h4><p>Captions, motion graphics and pacing cut to the beat of speech.</p></div>
+   <div class="step"><div class="k">05</div><h4>Measure</h4><p>Hook pass, watch time, saves and shares decide the next version.</p></div>
+  </div>
+  <div class="tools">
+   <span class="hl">After Effects</span><span class="hl">Premiere Pro</span><span class="hl">Photoshop</span><span>Final Cut Pro</span><span>DaVinci Resolve</span>
+   <span>Google Veo 3</span><span>Kling</span><span>Higgsfield</span><span>Seedance 2.5</span><span>Google Gemini</span><span>Claude</span>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <h2>Let's talk</h2>
+  <div class="links">
+   <a class="btn primary" href="mailto:ahmettaymil@gmail.com">ahmettaymil@gmail.com</a>
+   <a class="btn" href="https://www.instagram.com/ahmet.taymi/" target="_blank" rel="noopener">Instagram</a>
+   <a class="btn" href="https://linkedin.com/in/ahmettaymigenel" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+ </div>
+</footer>
+
+<script>
+const R=[
+ {id:"DdUk0Lrx0rw",t:"Claude Skills",v:400504,hook:50.2,w:16.3,sv:"31.4K",sh:"10.9K",f:3117},
+ {id:"DRuxqFhjarr",t:"Google AI Studio · Antigravity",v:193879,hook:59.7,w:18.6,sv:"8.8K",sh:"5.1K",f:927},
+ {id:"DdjgNfBtToS",t:"7 Skills for Claude",v:184058,hook:46.9,w:6.7,sv:"10.9K",sh:"3.1K",f:1116},
+ {id:"DR2L2UtCCzB",t:"Kling 2.5 Turbo",v:167308,hook:61.0,w:13.8,sv:"7.5K",sh:"4.2K",f:700,brand:1},
+ {id:"DR7Lm8kjcTN",t:"Google Code Wiki",v:156849,hook:52.5,w:10.8,sv:"7.8K",sh:"4.5K",f:664},
+ {id:"DUbUkDrDVd9",t:"Amazing UI Templates",v:141652,hook:57.5,w:10.2,sv:"8.6K",sh:"3.2K",f:466},
+ {id:"DeSb7OHx_9K",t:"Apple ProRes Log",v:128649,hook:null,w:36.3,sv:"3.7K",sh:"1.8K",f:244},
+ {id:"DUL0-HODcKJ",t:"Architecture Templates",v:126562,hook:null,w:9.6,sv:"5.2K",sh:"3K",f:708,brand:1},
+ {id:"DR-QfORDdao",t:"Google Pomelli",v:124896,hook:19.4,w:4.8,sv:"1.9K",sh:"1.4K",f:152},
+ {id:"DSFsCbeDfWv",t:"Learn AI with Google Skills",v:113723,hook:54.9,w:11.4,sv:"5.5K",sh:"3.9K",f:723},
+ {id:"DSfkozijQy2",t:"Google NotebookLM",v:103234,hook:null,w:12.8,sv:"3.3K",sh:"2.9K",f:225,brand:1},
+ {id:"DRr4ABGDf7y",t:"Nano Banana Pro",v:95088,hook:70.7,w:13.0,sv:"2.5K",sh:"1.5K",f:195}
+];
+const fmt=n=>n>=1e6?(n/1e6).toFixed(2)+"M":n>=1e3?Math.floor(n/1e3)+"K":n;
+const g=document.getElementById("grid");
+R.forEach((r,i)=>{
+ const el=document.createElement("article");el.className="reel";
+ el.innerHTML=`<div class="vid"><video muted loop playsinline preload="none" poster="v/${r.id}.jpg" src="v/${r.id}.mp4"></video>
+  <span class="tag ${r.brand?"brand":""}">${r.brand?"Brand collab":"Organic"}</span><span class="rank">#${i+1}</span>
+  <button class="snd" aria-label="Toggle sound">🔇</button></div>
+  <div class="meta"><h3>${r.t}</h3>${r.brand?"<div style=\"font-size:12px;color:var(--y);margin-top:2px\">with CHIP Online</div>":""}<div class="views">${fmt(r.v)}<small>views</small></div>
+  <div class="kv"><div>Hook pass<b>${r.hook==null?"—":r.hook.toFixed(1)+"%"}</b></div><div>Avg. watch<b>${r.w} s</b></div>
+  <div>Saves<b>${r.sv}</b></div><div>New followers<b>${r.f.toLocaleString("en-US")}</b></div></div>
+  <a class="ig" href="https://www.instagram.com/reel/${r.id}/" target="_blank" rel="noopener">Watch on Instagram ↗</a></div>`;
+ g.appendChild(el);
+ const v=el.querySelector("video"),b=el.querySelector(".snd");
+ const toggle=e=>{e.stopPropagation();document.querySelectorAll("video").forEach(o=>{if(o!==v){o.muted=true;o.parentNode.querySelector(".snd").textContent="🔇"}});
+  v.muted=!v.muted;b.textContent=v.muted?"🔇":"🔊";v.play().catch(()=>{});};
+ b.addEventListener("click",toggle);el.querySelector(".vid").addEventListener("click",toggle);
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.preload="auto";v.play().catch(()=>{})}else v.pause()}),{threshold:.55});
+document.querySelectorAll("video").forEach(v=>io.observe(v));
+const bars=document.getElementById("bars");
+R.filter(r=>r.hook!=null).sort((a,b)=>b.hook-a.hook).forEach((r,i,a)=>{
+ const d=document.createElement("div");d.className="bar"+(i<2?" hi":i==a.length-1?" lo":"");
+ d.innerHTML=`<span>${r.t.replace("Learn AI with ","").replace("Google AI Studio · ","")}</span><span class="t"><i style="width:${r.hook}%"></i></span><span class="v">${r.hook.toFixed(1)}%</span>`;
+ bars.appendChild(d);
+});
+</script>
+</body>
+</html>
